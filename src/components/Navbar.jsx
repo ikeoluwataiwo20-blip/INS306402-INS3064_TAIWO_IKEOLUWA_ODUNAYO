@@ -52,8 +52,16 @@ export default function Navbar() {
             <nav ref={navRef} className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
 
                 <a href="#!">
-                    <img src="./assets/logo.png" alt="Logo" className="w-28 cursor-pointer mr-14 dark:hidden" />
-                    <img src="./assets/logo_dark.png" alt="Logo" className="w-28 cursor-pointer mr-14 hidden dark:block" />
+                    <svg width="130" height="40" viewBox="0 0 130 40" className="w-28 cursor-pointer mr-14 dark:hidden" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="0" y="30" fill="#11001F" fontFamily="Outfit, sans-serif" fontSize="32" fontWeight="700" letterSpacing="-1.5">
+                            taiwo<tspan fill="#b820e6">.</tspan>
+                        </text>
+                    </svg>
+                    <svg width="130" height="40" viewBox="0 0 130 40" className="w-28 cursor-pointer mr-14 hidden dark:block" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="0" y="30" fill="#ffffff" fontFamily="Outfit, sans-serif" fontSize="32" fontWeight="700" letterSpacing="-1.5">
+                            taiwo<tspan fill="#b820e6">.</tspan>
+                        </text>
+                    </svg>
                 </a>
 
                 <ul ref={navLinkRef} className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/30 dark:bg-transparent ">
